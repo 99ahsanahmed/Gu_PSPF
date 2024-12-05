@@ -7,6 +7,13 @@ int calculateSimpleInterest(double prin,double rateOfInterest,double time){
 }
 int main()
 {
-    cout << calculateSimpleInterest;
+    double principal,rateOfInterest,time;
+    cout<<"Principal: ";
+    cin>>principal;
+    cout<<"rate of interest:";
+    cin>>rateOfInterest;
+    cout<<"time:";
+    cin>>time;
+    cout << calculateSimpleInterest(principal,rateOfInterest,time);
     return 0;
 }

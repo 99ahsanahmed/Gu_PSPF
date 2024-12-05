@@ -12,13 +12,13 @@ int main()
             cout<<"enter maths marks: \n";
             cout<<"enter 1st test marks\n";
             cin>>t1;
-            if(t1<=0){
+            if(t1<=0 || t1>100){
             cout<<"skipping..";
             t1=0; 
             } 
             cout<<"enter 2nd test marks\n";
             cin>>t2;
-            if(t2<=0){
+            if(t2<=0 || t2>100){
             cout<<"skipping.."; 
             t2=0;
             } 
@@ -28,13 +28,13 @@ int main()
             cout<<"enter science marks: \n";
             cout<<"enter 1st test marks\n";
             cin>>t3;
-            if(t3<=0){
+            if(t3<=0 || t3>100){
             cout<<"skipping.."; 
             t3=0;;
             } 
             cout<<"enter 2nd test marks\n";
             cin>>t4;
-            if(t4<=0){
+            if(t4<=0 || t4>100){
             cout<<"skipping.."; 
             t4=0;;
             } 
@@ -44,13 +44,13 @@ int main()
             cout<<"enter english marks: \n";
             cout<<"enter 1st test marks\n";
             cin>>t5;
-            if(t5<=0){
+            if(t5<=0 || t5>100){
             cout<<"skipping.."; 
             t5=0;;
             } 
             cout<<"enter 2nd test marks\n";
             cin>>t6;
-            if(t6<=0){
+            if(t6<=0 || t6>100){
             cout<<"skipping.."; 
             t6=0;;
             } 

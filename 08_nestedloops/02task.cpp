@@ -17,6 +17,5 @@ int main()
         shelfp = shelfp+3;
     
     }
-    
     return 0;
 }
