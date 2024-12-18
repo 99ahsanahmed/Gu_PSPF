@@ -17,3 +17,4 @@ int main()
     cout << calculateSimpleInterest(principal,rateOfInterest,time);
     return 0;
 }
+// g++ yourfile.cpp -o yourfile
