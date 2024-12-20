@@ -1,18 +1,19 @@
-//Task 4: Counting Even Numbers using recursion from 1 to N
-#include<iostream>
+#include <iostream>
 using namespace std;
-void even(int num){ // uptill 10
-    if (num==0) return;   
-    even(num-1);
-    if (num%2==0)
-    {
-        cout<<num<<endl;
+int even(int n) {
+    if (n <= 0) return 0;
+    if (n % 2 == 0) {
+        cout<<n<<endl;
+        return 1 + even(n - 1);
+    }
+    else {
+        return even(n - 1);
     }
 }
-int main()
-{
-    int num=10;
-    cout<<"even numbers till "<<num<<" :"<<endl;
-    even(num);// -> uptill 10
+int main() {
+    int n=6;
+    // cout << "Enter a number: ";
+    // cin >> n;
+    cout << "even numbers from 1 to " << n << " are: " << even(n) << endl;
     return 0;
 }
