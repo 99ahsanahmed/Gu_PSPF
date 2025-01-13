@@ -2,22 +2,18 @@
 
 #include<iostream>
 using namespace std;
-int main()
-{
-    string address = "Karachi, Pakistan.";
-    int spaces=0,words=0;
-    for (int i = 0; i < address.length(); i++)
-    {
-        if (address[i] == ' ' || address[i] == ',' || address[i] == '.')
-        {
-            spaces++;
+int main() {
+    string sentence;
+    cout << "Enter a sentence: ";
+    int wordCount = 0;
+    getline(cin, sentence);
+
+
+    for (int i = 0; i < sentence.length(); i++) {
+        if (sentence[i] == ' ') {
+            wordCount++;
         }
-        else{
-            words++;
-        }        
-    }
-    cout<<"Total number of spaces,commas and fullstops are: "<<spaces<<endl;
-    cout<<"Total number of words are: "<<words<<endl;
-    cout<<"length of string is: "<<address.length()<<endl;    
+    }  
+    cout << "Number of words in the sentence: " << wordCount + 1 << endl; 
     return 0;
 }
