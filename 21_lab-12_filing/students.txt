@@ -1,0 +1,21 @@
+Student 1:
+Name: ahsan
+ID: 1
+Maths grade: 23.4
+Urdu grade: 33.4
+English grade: 22
+----------------------
+Student 2:
+Name: ahmed
+ID: 2
+Maths grade: 89.1
+Urdu grade: 72
+English grade: 44
+----------------------
+Student 3:
+Name: zain
+ID: 3
+Maths grade: 99
+Urdu grade: 99
+English grade: 99
+----------------------

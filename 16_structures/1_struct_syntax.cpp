@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 struct Student {
-    char name[50];
+    string name;
     int age;
     float marks[5];  // Array of marks for 5 subjects
 };
