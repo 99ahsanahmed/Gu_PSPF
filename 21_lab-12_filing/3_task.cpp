@@ -56,26 +56,25 @@ void returnBook() {
         if (bookName == books[i].title) {
             if (!books[i].available) {
                 books[i].available = true;
-                cout << "Book returned successfully!\n";
+                cout << "Book returned successfully!" <<endl;
             } else {
-                cout << "Book is already available in the library.\n";
+                cout << "Book is already available in the library."<<endl;
             }
             return;
         }
     }
-    cout << "Book not found.\n";
+    cout << "Book not found.";
 }
 
 void displayBooks() {
     if (bookIndex == 0) {
-        cout << "No books in the library.\n";
+        cout << "No books in the library."<<endl;
     } else {
         for (int i = 0; i < bookIndex; i++) {
-            cout << "Title: " << books[i].title << "\n";
-            cout << "Author: " << books[i].author << "\n";
-            cout << "ISBN: " << books[i].ISBN << "\n";
-            cout << "Available: " << (books[i].available ? "Yes" : "No") << "\n";
-            cout << "----------------------\n";
+            cout << "Title: " << books[i].title << ""<<endl;
+            cout << "Author: " << books[i].author << "";
+            cout << "ISBN: " << books[i].ISBN << "";
+            cout << "Available: " << (books[i].available ? "Yes" : "No") << "";
         }
     }
 }
@@ -84,15 +83,15 @@ void saveLibraryToFile() {
     ofstream outFile("library.txt");
     if (outFile.is_open()) {
         for (int i = 0; i < bookIndex; i++) {
-            outFile << books[i].title << "\n";
-            outFile << books[i].author << "\n";
-            outFile << books[i].ISBN << "\n";
-            outFile << books[i].available << "\n";
+            outFile << books[i].title << "";
+            outFile << books[i].author << "";
+            outFile << books[i].ISBN << "";
+            outFile << books[i].available << "";
         }
         outFile.close();
-        cout << "Library database saved to file.\n";
+        cout << "Library database saved to file.";
     } else {
-        cout << "Error opening file.\n";
+        cout << "Error opening file.";
     }
 }
 
@@ -100,13 +99,13 @@ int main() {
     int option;
 
     do {
-        cout << "Menu:<<endl>> ";
-        cout << "1. Add new book<<endl>>";
-        cout << "2. Checkout book<<endl>>";
-        cout << "3. Return book<<endl>>";
-        cout << "4. Display all books<<endl>>";
-        cout << "5. Exit<<endl>>";
-        cout << "Enter your option: ";
+        cout << "Menu: " <<endl;
+        cout << "1. Add new book"<<endl;
+        cout << "2. Checkout book"<<endl;
+        cout << "3. Return book"<<endl;
+        cout << "4. Display all books"<<endl;
+        cout << "5. Exit"<<endl;
+        cout << "Enter your option: "<<endl;
         cin >> option;
 
         switch (option) {

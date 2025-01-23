@@ -35,7 +35,6 @@ void displayContacts() {
             cout << "Name: " << contacts[i].name << endl;
             cout << "Phone: " << contacts[i].phone << endl;
             cout << "Email: " << contacts[i].email << endl;
-            cout << "-----------------------\n";
         }
     }
 }
@@ -99,10 +98,10 @@ int main() {
                 searchContact();
                 break;
             case 0:
-                cout << "Exiting program. Goodbye!\n";
+                cout << "Allah hafiz";
                 break;
             default:
-                cout << "Invalid option. Please try again.\n";
+                cout << "Invalid option";
         }
     } while (option != 0);
 
