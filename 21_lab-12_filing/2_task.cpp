@@ -21,15 +21,15 @@ void addContact() {
         cout << "Enter email: ";
         cin >> contacts[contactCount].email;
         contactCount++;
-        cout << "Contact added successfully!\n";
+        cout << "Contact added successfully!" << endl;
     } else {
-        cout << "Address book is full!\n";
+        cout << "Address book is full!" << endl;
     }
 }
 
 void displayContacts() {
     if (contactCount == 0) {
-        cout << "No contacts to display.\n";
+        cout << "No contacts to display." << endl;
     } else {
         for (int i = 0; i < contactCount; i++) {
             cout << "Name: " << contacts[i].name << endl;
@@ -56,7 +56,7 @@ void searchContact() {
     }
 
     if (!found) {
-        cout << "Contact not found.\n";
+        cout << "Contact not found." << endl;
     }
 }
 
@@ -69,20 +69,20 @@ void saveContactsToFile() {
             outFile << contacts[i].email << endl;
         }
         outFile.close();
-        cout << "Contacts saved to file.\n";
+        cout << "Contacts saved to file." << endl;
     } else {
-        cout << "Error opening file.\n";
+        cout << "Error opening file." << endl;
     }
 }
 
 int main() {
     int option;
     do {
-        cout << "Menu:\n";
-        cout << "0. Quit\n";
-        cout << "1. Add new contact\n";
-        cout << "2. Display all contacts\n";
-        cout << "3. Search for a contact by name\n";
+        cout << "Menu:" << endl;
+        cout << "0. Quit" << endl;
+        cout << "1. Add new contact" << endl;
+        cout << "2. Display all contacts" << endl;
+        cout << "3. Search for a contact by name" << endl;
         cout << "Enter your option: ";
         cin >> option;
 
@@ -98,10 +98,10 @@ int main() {
                 searchContact();
                 break;
             case 0:
-                cout << "Allah hafiz";
+                cout << "Allah hafiz" << endl;
                 break;
             default:
-                cout << "Invalid option";
+                cout << "Invalid option" << endl;
         }
     } while (option != 0);
 
