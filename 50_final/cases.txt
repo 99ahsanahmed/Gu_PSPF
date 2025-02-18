@@ -1,0 +1,10 @@
+Case Id : 101
+Client Name: ahsan
+Case Description: over speeding
+Case Status: close
+
+Case Id : 102
+Client Name: ahmed
+Case Description: killing
+Case Status: open
+
